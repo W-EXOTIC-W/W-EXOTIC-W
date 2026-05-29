@@ -1,0 +1,49 @@
+<svg width="1000" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="300" fill="#050807"/>
+
+  <defs>
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00ff41" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff41" stop-opacity=".45"/>
+      <stop offset="100%" stop-color="#00ff41" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g opacity=".25">
+    <path d="M0 40 H1000 M0 80 H1000 M0 120 H1000 M0 160 H1000 M0 200 H1000 M0 240 H1000" stroke="#00ff41"/>
+    <path d="M100 0 V300 M200 0 V300 M300 0 V300 M400 0 V300 M500 0 V300 M600 0 V300 M700 0 V300 M800 0 V300 M900 0 V300" stroke="#00ff41"/>
+  </g>
+
+  <rect x="-300" y="0" width="300" height="300" fill="url(#scan)">
+    <animate attributeName="x" from="-300" to="1000" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="500" y="125" text-anchor="middle" font-family="monospace" font-size="62" fill="#eaffea" filter="url(#glow)">
+    W-EXOTIC-W
+    <animate attributeName="opacity" values="1;.55;1" dur="2s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="500" y="170" text-anchor="middle" font-family="monospace" font-size="22" fill="#00ff41">
+    Linux • Termux • Raspberry Pi • WireGuard • Python
+  </text>
+
+  <text x="500" y="210" text-anchor="middle" font-family="monospace" font-size="18" fill="#7CFF9B">
+    Building. Automating. Securing.
+  </text>
+
+  <circle cx="130" cy="75" r="5" fill="#00ff41">
+    <animate attributeName="cy" values="75;225;75" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="870" cy="230" r="5" fill="#00ff41">
+    <animate attributeName="cy" values="230;70;230" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
