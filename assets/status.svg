@@ -30,9 +30,4 @@
   <circle cx="900" cy="60" r="7" fill="#00ff41">
     <animate attributeName="opacity" values="1;.2;1" dur="1s" repeatCount="indefinite"/>
   </circle>
-
-  <text x="760" y="125" fill="#7CFF9B" font-family="monospace" font-size="18">
-    compiling projects...
-    <animate attributeName="opacity" values="1;.25;1" dur="1.5s" repeatCount="indefinite"/>
-  </text>
 </svg>
